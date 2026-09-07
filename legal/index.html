@@ -69,6 +69,23 @@
   a.doc .name { font-weight: 600; }
   a.doc .desc { color: var(--text-muted); font-size: .85rem; margin-top: .15rem; }
   .back { display: block; margin-top: 2rem; font-size: .85rem; color: var(--text-muted); }
+  .footer-powered {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    flex-wrap: wrap;
+    font-size: .76rem;
+    color: var(--text-muted);
+  }
+  .footer-powered-item { display: inline-flex; align-items: center; gap: .4rem; color: var(--text-muted); text-decoration: none; }
+  .footer-powered-item:hover { color: var(--text); }
+  .footer-powered-logo { height: 18px; width: auto; opacity: .8; }
+  .footer-powered-badge { height: 26px; width: auto; display: block; }
+  .footer-powered-sep { color: var(--border); }
 </style>
 </head>
 <body>
@@ -85,6 +102,17 @@
     <li><a class="doc" href="/legal/opt-out/"><div class="name">Opt-Out Preferences</div><div class="desc">There's nothing to sell, so nothing to opt out of.</div></a></li>
   </ul>
   <a class="back" href="/">&larr; Back to the notice</a>
+  <div class="footer-powered">
+    <a href="https://stux.group" class="footer-powered-item" target="_blank" rel="noopener">
+      <img src="https://media.stux.group/global/logo.png" alt="Stux.Group" class="footer-powered-logo">
+    </a>
+    <span class="footer-powered-sep">|</span>
+    <span>A Stux.Group Project</span>
+    <span class="footer-powered-sep">|</span>
+    <a href="https://stuxedo.com" class="footer-powered-item" target="_blank" rel="noopener">
+      <img src="https://global.media.stuxedo.com/badges/rectangle-badge.png" alt="Powered by Stuxedo" class="footer-powered-badge">
+    </a>
+  </div>
 </div>
 </body>
 </html>

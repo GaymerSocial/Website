@@ -51,6 +51,23 @@
   .eyebrow a { color: var(--accent); text-decoration: none; }
   .back { display: block; margin-top: 2rem; font-size: .85rem; color: var(--text-muted); }
   a { color: var(--accent); }
+  .footer-powered {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    flex-wrap: wrap;
+    font-size: .76rem;
+    color: var(--text-muted);
+  }
+  .footer-powered-item { display: inline-flex; align-items: center; gap: .4rem; color: var(--text-muted) !important; text-decoration: none; }
+  .footer-powered-item:hover { color: var(--text) !important; }
+  .footer-powered-logo { height: 18px; width: auto; opacity: .8; }
+  .footer-powered-badge { height: 26px; width: auto; display: block; }
+  .footer-powered-sep { color: var(--border); }
 </style>
 </head>
 <body>
@@ -60,6 +77,17 @@
   <p>This site is maintained by <a href="https://stux.group" target="_blank" rel="noopener">Stux.Group</a> under the <a href="https://github.com/GaymerSocial" target="_blank" rel="noopener">GaymerSocial</a> organization, following the discontinuation of the Gaymer.Social and Gaymer.Coffee Mastodon instances in September 2026.</p>
   <p>For questions about this notice or the former instances, reach out via the <a href="https://github.com/GaymerSocial" target="_blank" rel="noopener">GaymerSocial GitHub organization</a>.</p>
   <a class="back" href="/legal/">&larr; Back to Legal</a>
+  <div class="footer-powered">
+    <a href="https://stux.group" class="footer-powered-item" target="_blank" rel="noopener">
+      <img src="https://media.stux.group/global/logo.png" alt="Stux.Group" class="footer-powered-logo">
+    </a>
+    <span class="footer-powered-sep">|</span>
+    <span>A Stux.Group Project</span>
+    <span class="footer-powered-sep">|</span>
+    <a href="https://stuxedo.com" class="footer-powered-item" target="_blank" rel="noopener">
+      <img src="https://global.media.stuxedo.com/badges/rectangle-badge.png" alt="Powered by Stuxedo" class="footer-powered-badge">
+    </a>
+  </div>
 </div>
 </body>
 </html>

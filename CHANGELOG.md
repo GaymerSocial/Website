@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.1.0
+
+### Added
+- "A Stux.Group Project · Powered by Stuxedo" footer badge (matching the convention used on Stuxs.Tools/Downl.one) added to `index.html`, `404.html`, and all 7 `/legal` pages
+
 ## v1.0.0
 
 ### Added

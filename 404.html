@@ -88,6 +88,23 @@
     font-size: .8rem;
   }
   .footer-link a { color: var(--text-muted); }
+  .footer-powered {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    flex-wrap: wrap;
+    font-size: .76rem;
+    color: var(--text-muted);
+  }
+  .footer-powered-item { display: inline-flex; align-items: center; gap: .4rem; color: var(--text-muted); text-decoration: none; }
+  .footer-powered-item:hover { color: var(--text); }
+  .footer-powered-logo { height: 18px; width: auto; opacity: .8; }
+  .footer-powered-badge { height: 26px; width: auto; display: block; }
+  .footer-powered-sep { color: var(--border); }
 </style>
 </head>
 <body>
@@ -100,6 +117,17 @@
   <p>Rising running costs, combined with the loss of hosting infrastructure in the NorthC data centre fire, made it impossible to keep either instance online. As a result of the fire, no export or migration of account data was possible before the shutdown.</p>
   <p>We're not aware of a successor community and aren't recommending one. Thank you to everyone who was part of Gaymer.Social and Gaymer.Coffee.</p>
   <div class="footer-link"><a href="/legal/">Boring Legal Stuff</a></div>
+  <div class="footer-powered">
+    <a href="https://stux.group" class="footer-powered-item" target="_blank" rel="noopener">
+      <img src="https://media.stux.group/global/logo.png" alt="Stux.Group" class="footer-powered-logo">
+    </a>
+    <span class="footer-powered-sep">|</span>
+    <span>A Stux.Group Project</span>
+    <span class="footer-powered-sep">|</span>
+    <a href="https://stuxedo.com" class="footer-powered-item" target="_blank" rel="noopener">
+      <img src="https://global.media.stuxedo.com/badges/rectangle-badge.png" alt="Powered by Stuxedo" class="footer-powered-badge">
+    </a>
+  </div>
 </div>
 <script>
 (function () {

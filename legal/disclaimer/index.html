@@ -51,6 +51,23 @@
   .eyebrow { font-size: .8rem; margin: 0 0 .75rem; }
   .eyebrow a { color: var(--accent); text-decoration: none; }
   .back { display: block; margin-top: 2rem; font-size: .85rem; color: var(--text-muted); }
+  .footer-powered {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    flex-wrap: wrap;
+    font-size: .76rem;
+    color: var(--text-muted);
+  }
+  .footer-powered-item { display: inline-flex; align-items: center; gap: .4rem; color: var(--text-muted); text-decoration: none; }
+  .footer-powered-item:hover { color: var(--text); }
+  .footer-powered-logo { height: 18px; width: auto; opacity: .8; }
+  .footer-powered-badge { height: 26px; width: auto; display: block; }
+  .footer-powered-sep { color: var(--border); }
 </style>
 </head>
 <body>
@@ -67,6 +84,17 @@
   <h2>Copyright</h2>
   <p>The Gaymer.Social and Gaymer.Coffee names, logos, and icons remain the property of their owners and are used here solely to identify the discontinued services this notice refers to.</p>
   <a class="back" href="/legal/">&larr; Back to Legal</a>
+  <div class="footer-powered">
+    <a href="https://stux.group" class="footer-powered-item" target="_blank" rel="noopener">
+      <img src="https://media.stux.group/global/logo.png" alt="Stux.Group" class="footer-powered-logo">
+    </a>
+    <span class="footer-powered-sep">|</span>
+    <span>A Stux.Group Project</span>
+    <span class="footer-powered-sep">|</span>
+    <a href="https://stuxedo.com" class="footer-powered-item" target="_blank" rel="noopener">
+      <img src="https://global.media.stuxedo.com/badges/rectangle-badge.png" alt="Powered by Stuxedo" class="footer-powered-badge">
+    </a>
+  </div>
 </div>
 </body>
 </html>
