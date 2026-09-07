@@ -9,7 +9,7 @@ The [gaymer.social](https://gaymer.social) root domain, under the [GaymerSocial]
 Gaymer.Social and Gaymer.Coffee — our Mastodon instances for LGBTQ+ gaymers — were discontinued in September 2026, due to rising costs and the loss of hosting infrastructure in the NorthC data centre fire. This repo is a plain static site (no framework, no build step) that serves the discontinuation notice at the root domain, and is the redirect target for:
 
 - Every legacy Mastodon-style URL either instance used to serve (`/@username`, `/web/*`, `/tags/*`, `/statuses/*`, `/oauth/*`, etc.) — caught by the `_redirects` catch-all and by `404.html` on hosts that don't support real redirects
-- The sibling [About](https://github.com/GaymerSocial/AboutPage) and [Hub](https://github.com/GaymerSocial/HubPage) repos, which now redirect here in full
+- The sibling [About](https://github.com/GaymerSocial/About) and [Hub](https://github.com/GaymerSocial/Hub) repos, which now redirect here in full
 - **gaymer.coffee** — this domain needs to be added as an additional custom domain alias for this site in the hosting provider's dashboard (e.g. Netlify's domain settings), pointed at the same deploy. That's account/DNS configuration outside this repo — the `CNAME` file here only declares the primary `gaymer.social` domain (a GitHub Pages convention with a one-domain limit); it doesn't need a second file for gaymer.coffee, just the host-side domain alias.
 
 ## Files

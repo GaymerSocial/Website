@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.1
+
+### Changed
+- `README.md` links to the sibling About/Hub repos updated from `AboutPage`/`HubPage` to `About`/`Hub`, following the GitHub repo renames that dropped "Page" from each name
+
 ## v1.4.0
 
 ### Fixed
