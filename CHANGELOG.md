@@ -2,6 +2,18 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.0
+
+### Fixed
+- Footer logo/badge images on `index.html`/`404.html` were being distorted (stretched to a fixed width that didn't match their aspect ratio): the `.card img` selector was unintentionally matching every `<img>` nested anywhere inside `.card`, including the deeply-nested Stux.Group/Stuxedo footer images, and its `width: 180px; max-width: 60%` fought with `.footer-powered-logo`/`.footer-powered-badge`'s `height`. Scoped it to `.card > img` so it only targets the direct-child header logo.
+
+### Changed
+- "Boring Legal Stuff" moved into the same footer section as the Stux.Group/Stuxedo credit, stacked above it, instead of being a separate block
+- Card widened (`34rem` → `50rem`) to give the now-longer copy more room and fit the heading on one line
+- Heading changed to "Gaymer.Social / Gaymer.Coffee is no longer available"; eyebrow changed to "Services Discontinued" (plural, covering both instances)
+- Reason paragraph now also mentions the ongoing maintenance burden alongside rising costs and the fire
+- Successor-community paragraph reworded: "We aren't currently recommending a successor community. If we become aware of one and our decision changes, we will announce it on this page." — dropped the duplicate "Thank you" (kept only in the farewell note)
+
 ## v1.3.1
 
 ### Changed
