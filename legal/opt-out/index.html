@@ -15,6 +15,7 @@
     --text-muted: #5b5b6b;
     --border: #e4e4ec;
     --accent: #7c3aed;
+    --rainbow: linear-gradient(90deg, #DA1E28, #FF832B, #F1C21B, #42BE65, #08BDBA, #0F62FE, #8A3FFC, #FF7EB6, #DA1E28);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -36,6 +37,32 @@
     display: flex;
     justify-content: center;
     padding: 3rem 1.25rem;
+    position: relative;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: -25%;
+    z-index: -1;
+    background: var(--rainbow);
+    background-size: 400% 400%;
+    filter: blur(90px) saturate(1.15);
+    opacity: .32;
+    animation: auroraFlow 24s ease-in-out infinite;
+  }
+  @media (prefers-color-scheme: dark) {
+    body::before { opacity: .2; }
+  }
+  @keyframes auroraFlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  @keyframes accentFlow {
+    to { background-position: 300% center; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body::before, .card::before, .eyebrow a { animation: none; }
   }
   .card {
     max-width: 34rem;
@@ -44,11 +71,32 @@
     border: 1px solid var(--border);
     border-radius: 1rem;
     padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--rainbow);
+    background-size: 300% auto;
+    animation: accentFlow 6s linear infinite;
   }
   h1 { font-size: 1.4rem; margin: 0 0 .25rem; }
   p, li { color: var(--text-muted); line-height: 1.6; }
   .eyebrow { font-size: .8rem; margin: 0 0 .75rem; }
-  .eyebrow a { color: var(--accent); text-decoration: none; }
+  .eyebrow a {
+    text-decoration: none;
+    display: inline-block;
+    background: var(--rainbow);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: accentFlow 6s linear infinite;
+    font-weight: 600;
+  }
   .back { display: block; margin-top: 2rem; font-size: .85rem; color: var(--text-muted); }
   .footer-powered {
     margin-top: 1.5rem;

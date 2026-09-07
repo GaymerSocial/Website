@@ -2,6 +2,15 @@
 
 All notable changes to this repo are documented here.
 
+## v1.2.0
+
+### Added
+- `--rainbow` accent — an animated gradient sampled directly from the real pixel colours in the Gaymer.Social logo's pinwheel icon (`#DA1E28` red, `#FF832B` orange, `#F1C21B` yellow, `#42BE65` green, `#08BDBA` teal, `#0F62FE` blue, `#8A3FFC` purple, `#FF7EB6` pink), applied to the "SERVICE DISCONTINUED"/"Legal" eyebrow text, the card's top accent bar, and the dev-mode banner on all 9 pages
+- A soft, blurred, slowly-animating "aurora" gradient wash behind the card on every page, using the same logo-derived palette
+
+### Changed
+- All animated gradients respect `prefers-reduced-motion: reduce` (frozen, no animation) for accessibility
+
 ## v1.1.0
 
 ### Added
