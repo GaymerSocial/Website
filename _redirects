@@ -1,0 +1,7 @@
+# Gaymer.Social was a Mastodon instance; every legacy Mastodon-style URL
+# (e.g. /@username, /@username/123, /web/*, /tags/foo, /users/bar,
+# /accounts/1, /statuses/1, /media/*, /auth/sign_in, /oauth/authorize,
+# /invite/abc123, /explore, /about, /terms, /privacy-policy, /.well-known/*,
+# /api/*) plus anything else no longer served gets sent back to the
+# discontinuation notice at the root.
+/*    /    301

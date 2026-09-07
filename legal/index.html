@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/assets/icon.png">
+<title>Boring Legal Stuff — Gaymer.Social</title>
+<meta name="description" content="Privacy, terms, cookies, imprint, disclaimer and opt-out for the Gaymer.Social discontinuation notice.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7fb;
+    --card: #ffffff;
+    --text: #1c1c24;
+    --text-muted: #5b5b6b;
+    --border: #e4e4ec;
+    --accent: #7c3aed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14141b;
+      --card: #1d1d27;
+      --text: #f2f2f7;
+      --text-muted: #a3a3b5;
+      --border: #303040;
+      --accent: #a78bfa;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1.25rem;
+  }
+  .card {
+    max-width: 34rem;
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 .5rem; }
+  .lead { color: var(--text-muted); line-height: 1.6; margin: 0 0 1.5rem; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 .5rem;
+  }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li + li { margin-top: .5rem; }
+  a.doc {
+    display: block;
+    padding: .85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: .6rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+  a.doc:hover { border-color: var(--accent); }
+  a.doc .name { font-weight: 600; }
+  a.doc .desc { color: var(--text-muted); font-size: .85rem; margin-top: .15rem; }
+  .back { display: block; margin-top: 2rem; font-size: .85rem; color: var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">Legal</div>
+  <h1>Boring Legal Stuff</h1>
+  <p class="lead">This site is a discontinuation notice for the former Gaymer.Social and Gaymer.Coffee Mastodon instances. There's not much to say here, but here it is in one place, in plain English.</p>
+  <ul>
+    <li><a class="doc" href="/legal/privacy/"><div class="name">Privacy Policy</div><div class="desc">What we collect (nothing) and how this site is hosted.</div></a></li>
+    <li><a class="doc" href="/legal/terms/"><div class="name">Terms and Ethics</div><div class="desc">This is an informational notice, not a service.</div></a></li>
+    <li><a class="doc" href="/legal/cookies/"><div class="name">Cookies Policy</div><div class="desc">No cookies, no local storage, no tracking of any kind.</div></a></li>
+    <li><a class="doc" href="/legal/imprint/"><div class="name">Imprint</div><div class="desc">Who operates this site and how to reach us.</div></a></li>
+    <li><a class="doc" href="/legal/disclaimer/"><div class="name">Disclaimer</div><div class="desc">Accuracy and liability for the notice above.</div></a></li>
+    <li><a class="doc" href="/legal/opt-out/"><div class="name">Opt-Out Preferences</div><div class="desc">There's nothing to sell, so nothing to opt out of.</div></a></li>
+  </ul>
+  <a class="back" href="/">&larr; Back to the notice</a>
+</div>
+</body>
+</html>

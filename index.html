@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/assets/icon.png">
+<title>Gaymer.Social — Discontinued</title>
+<meta name="description" content="Gaymer.Social and Gaymer.Coffee have been discontinued as of September 2026.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7fb;
+    --card: #ffffff;
+    --text: #1c1c24;
+    --text-muted: #5b5b6b;
+    --border: #e4e4ec;
+    --accent: #7c3aed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14141b;
+      --card: #1d1d27;
+      --text: #f2f2f7;
+      --text-muted: #a3a3b5;
+      --border: #303040;
+      --accent: #a78bfa;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.25rem;
+  }
+  .card {
+    max-width: 34rem;
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+  .card img {
+    width: 180px;
+    max-width: 60%;
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+  }
+  p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+  }
+  p:last-of-type { margin-bottom: 0; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 .5rem;
+  }
+  #dev-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--accent);
+    color: #fff;
+    font-size: .8rem;
+    text-align: center;
+    padding: .4rem;
+    z-index: 10;
+  }
+  .footer-link {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: .8rem;
+  }
+  .footer-link a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+<div id="dev-banner" hidden>Local development build — add <code>?nodev=1</code> to the URL to preview production behavior</div>
+<div class="card">
+  <img src="/assets/logo.png" alt="Gaymer.Social">
+  <div class="eyebrow">Service Discontinued</div>
+  <h1>Gaymer.Social is no longer available</h1>
+  <p>Gaymer.Social and Gaymer.Coffee, our Mastodon instances for LGBTQ+ gaymers, were discontinued in September 2026.</p>
+  <p>Rising running costs, combined with the loss of hosting infrastructure in the NorthC data centre fire, made it impossible to keep either instance online. As a result of the fire, no export or migration of account data was possible before the shutdown.</p>
+  <p>We're not aware of a successor community and aren't recommending one. Thank you to everyone who was part of Gaymer.Social and Gaymer.Coffee.</p>
+  <div class="footer-link"><a href="/legal/">Boring Legal Stuff</a></div>
+</div>
+<script>
+(function () {
+  var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+  var suppressed = /(?:^|[?&])nodev=1(?:&|$)/.test(location.search);
+  if (isLocal && !suppressed) {
+    document.getElementById('dev-banner').hidden = false;
+  }
+})();
+</script>
+</body>
+</html>
