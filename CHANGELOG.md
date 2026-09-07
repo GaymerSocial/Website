@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.3.1
+
+### Changed
+- Notice copy on `index.html`/`404.html` now explicitly frames the shutdown as a decision: the fire caused complete data loss, rebuilding both instances from the ground up wasn't something the team could take on, and as a result they made the sad decision to discontinue the service
+
 ## v1.3.0
 
 ### Fixed
