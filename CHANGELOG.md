@@ -2,6 +2,15 @@
 
 All notable changes to this repo are documented here.
 
+## v1.3.0
+
+### Fixed
+- Header alignment on `index.html`/`404.html`/`legal/index.html`: `.eyebrow` had accidentally been made `display: inline-block`, which pulled it onto the same line as the preceding logo `<img>` — the pair was then centered as a group instead of individually, visibly shifting the logo left and the eyebrow label right. Removed the unneeded `display` override (gradient text via `background-clip: text` never required it).
+- Light-mode legibility of the animated gradient eyebrow/label text: several of the vivid logo-sampled colours (yellow `#F1C21B`, teal `#08BDBA`, pink `#FF7EB6`) had contrast ratios as low as 1.58:1 against the white card — nearly invisible at those points in the animation. Added a separate `--rainbow-text` gradient with darkened stops (verified ≥3.85:1 against white, most ≥4.5:1) used for all eyebrow text in light mode; dark mode still uses the original vivid `--rainbow` (which already had good contrast — 3.34–9.92:1 — against the dark card).
+
+### Added
+- A farewell message on `index.html`/`404.html`: "This service will be greatly missed. Thank you all for the memories over the years and being part of our journey since 2021. — The Team at Gaymer.Social / Gaymer.Coffee"
+
 ## v1.2.0
 
 ### Added

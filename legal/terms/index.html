@@ -16,6 +16,7 @@
     --border: #e4e4ec;
     --accent: #7c3aed;
     --rainbow: linear-gradient(90deg, #DA1E28, #FF832B, #F1C21B, #42BE65, #08BDBA, #0F62FE, #8A3FFC, #FF7EB6, #DA1E28);
+    --rainbow-text: linear-gradient(90deg, #A3161E, #9E511A, #846A0E, #318E4B, #047573, #0F62FE, #6B31C4, #8C4564, #A3161E);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -25,6 +26,7 @@
       --text-muted: #a3a3b5;
       --border: #303040;
       --accent: #a78bfa;
+      --rainbow-text: var(--rainbow);
     }
   }
   * { box-sizing: border-box; }
@@ -90,7 +92,7 @@
   .eyebrow a {
     text-decoration: none;
     display: inline-block;
-    background: var(--rainbow);
+    background: var(--rainbow-text);
     background-size: 300% auto;
     -webkit-background-clip: text;
     background-clip: text;
