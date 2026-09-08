@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.3
+
+### Added
+- `assets/icon.png` (favicon, every page) and `assets/logo.png` (`404.html`/`index.html`) references now carry `?v=1.4.3` so browser/CDN caches invalidate if either asset is ever replaced — this is a plain static site with no build step, so the version string has to be bumped by hand across every page alongside any future asset change
+
 ## v1.4.2
 
 ### Changed
