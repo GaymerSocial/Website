@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.4
+
+### Changed
+- `assets/logo.png`/`assets/icon.png` moved from being vendored locally in this repo to the shared CDN at `https://global.media.gaymer.social/logo.png` / `/icon.png` (the same file was previously duplicated across all four GaymerSocial repos) — the favicon and header/footer logo `<img>` references were updated accordingly and no longer carry the `?v=` cache-buster, since cache invalidation for that asset is now the CDN's concern rather than this repo's release version
+
 ## v1.4.3
 
 ### Added

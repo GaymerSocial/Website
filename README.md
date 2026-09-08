@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" width="300" alt="Gaymer.Social">
+  <img src="https://global.media.gaymer.social/logo.png" width="300" alt="Gaymer.Social">
 </p>
 
 # GaymerSocial Website
