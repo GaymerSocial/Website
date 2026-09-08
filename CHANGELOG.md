@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.2
+
+### Changed
+- `README.md`'s footer brand-attribution block updated to the new two-line format (Built & Maintained by Gaymer.Social, Hosted by Stuxedo / Gaymer.Social is a part of the Stux.Group brand of businesses), replacing the older single-line disclaimer
+
 ## v1.4.1
 
 ### Changed
