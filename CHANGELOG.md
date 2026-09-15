@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.5
+
+### Fixed
+- `404.html`/`index.html`/`README.md` and every `legal/*/index.html` page's Stux.Group footer logo reference had a duplicated `/global/` path segment (`https://global.media.stux.group/global/logo.png`), a 404 — corrected to `https://global.media.stux.group/logo.png`
+
 ## v1.4.4
 
 ### Changed
