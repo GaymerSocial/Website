@@ -1,6 +1,6 @@
 # Contributing
 
-This is a [Stux.Group](https://stux.group) project under the [GaymerSocial](https://github.com/GaymerSocial) organization.
+This is [a Stux.Group Service](https://services.stux.group) under the [GaymerSocial](https://github.com/GaymerSocial) organization.
 
 ## Versioning and changelog
 

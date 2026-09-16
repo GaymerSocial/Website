@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.6
+
+### Changed
+- The footer's "A Stux.Group Project" badge now reads "A Stux.Group Service" and links to `https://services.stux.group`, and `CONTRIBUTING.md`'s "is a Stux.Group project" line was updated to match.
+
 ## v1.4.5
 
 ### Fixed
