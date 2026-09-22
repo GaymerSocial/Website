@@ -2,6 +2,11 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.7
+
+### Fixed
+- The v1.4.6 "A Stux.Group Project" → "A Stux.Group Service" fix missed the 6 legal subpages (`legal/privacy`, `terms`, `cookies`, `imprint`, `disclaimer`, `opt-out`) and the legal hub itself — all now read "A Stux.Group Service" too, matching the root `index.html`/`404.html`.
+
 ## v1.4.6
 
 ### Changed
