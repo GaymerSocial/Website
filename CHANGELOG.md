@@ -2,6 +2,15 @@
 
 All notable changes to this repo are documented here.
 
+## v1.4.9
+
+### Added
+- GitHub Actions CI (`.github/workflows/ci.yml`) checking on every push and pull request against `main` that the key repo files exist, local links resolve, workflow YAML is valid, and `VERSION.md` has a matching `CHANGELOG.md` release heading
+- Release workflow (`.github/workflows/release.yml`) that publishes a GitHub Release whenever `commit.sh`'s `vX.Y.Z` tag is pushed, using the matching `CHANGELOG.md` section as the notes
+
+### Changed
+- CHANGELOG sections reordered to Added, Changed, Fixed, Removed, Security, Deprecated
+
 ## v1.4.8
 
 ### Fixed
@@ -44,15 +53,15 @@ All notable changes to this repo are documented here.
 
 ## v1.4.0
 
-### Fixed
-- Footer logo/badge images on `index.html`/`404.html` were being distorted (stretched to a fixed width that didn't match their aspect ratio): the `.card img` selector was unintentionally matching every `<img>` nested anywhere inside `.card`, including the deeply-nested Stux.Group/Stuxedo footer images, and its `width: 180px; max-width: 60%` fought with `.footer-powered-logo`/`.footer-powered-badge`'s `height`. Scoped it to `.card > img` so it only targets the direct-child header logo.
-
 ### Changed
 - "Boring Legal Stuff" moved into the same footer section as the Stux.Group/Stuxedo credit, stacked above it, instead of being a separate block
 - Card widened (`34rem` → `50rem`) to give the now-longer copy more room and fit the heading on one line
 - Heading changed to "Gaymer.Social / Gaymer.Coffee is no longer available"; eyebrow changed to "Services Discontinued" (plural, covering both instances)
 - Reason paragraph now also mentions the ongoing maintenance burden alongside rising costs and the fire
 - Successor-community paragraph reworded: "We aren't currently recommending a successor community. If we become aware of one and our decision changes, we will announce it on this page." — dropped the duplicate "Thank you" (kept only in the farewell note)
+
+### Fixed
+- Footer logo/badge images on `index.html`/`404.html` were being distorted (stretched to a fixed width that didn't match their aspect ratio): the `.card img` selector was unintentionally matching every `<img>` nested anywhere inside `.card`, including the deeply-nested Stux.Group/Stuxedo footer images, and its `width: 180px; max-width: 60%` fought with `.footer-powered-logo`/`.footer-powered-badge`'s `height`. Scoped it to `.card > img` so it only targets the direct-child header logo.
 
 ## v1.3.1
 
@@ -61,12 +70,12 @@ All notable changes to this repo are documented here.
 
 ## v1.3.0
 
+### Added
+- A farewell message on `index.html`/`404.html`: "This service will be greatly missed. Thank you all for the memories over the years and being part of our journey since 2021. — The Team at Gaymer.Social / Gaymer.Coffee"
+
 ### Fixed
 - Header alignment on `index.html`/`404.html`/`legal/index.html`: `.eyebrow` had accidentally been made `display: inline-block`, which pulled it onto the same line as the preceding logo `<img>` — the pair was then centered as a group instead of individually, visibly shifting the logo left and the eyebrow label right. Removed the unneeded `display` override (gradient text via `background-clip: text` never required it).
 - Light-mode legibility of the animated gradient eyebrow/label text: several of the vivid logo-sampled colours (yellow `#F1C21B`, teal `#08BDBA`, pink `#FF7EB6`) had contrast ratios as low as 1.58:1 against the white card — nearly invisible at those points in the animation. Added a separate `--rainbow-text` gradient with darkened stops (verified ≥3.85:1 against white, most ≥4.5:1) used for all eyebrow text in light mode; dark mode still uses the original vivid `--rainbow` (which already had good contrast — 3.34–9.92:1 — against the dark card).
-
-### Added
-- A farewell message on `index.html`/`404.html`: "This service will be greatly missed. Thank you all for the memories over the years and being part of our journey since 2021. — The Team at Gaymer.Social / Gaymer.Coffee"
 
 ## v1.2.0
 
