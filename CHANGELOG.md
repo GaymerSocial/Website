@@ -2,6 +2,16 @@
 
 All notable changes to this repo are documented here.
 
+## v1.5.0
+
+### Added
+- The shared Stux dev banner (`assets/site-banner.css` + `assets/site-banner.js`), shown only when the page is opened from localhost; `?banner=soon,maintenance,site` previews the other banner types, `?nodev=1` turns it off, production never shows one, and it uses no browser storage (this site promises none)
+- A muted footer brand row (Stux.Group logo at 28px, grey until hovered or focused, then "A Stux.Group Service") and a "Created with love / code / coffee by Gaymer.Social" line
+- `/sitemap` (an HTML page in the site's layout listing every page) and `sitemap.xml`, committed as static files and regenerated with `python scripts/build-sitemap.py` (`lastmod` comes from each page's last git commit); `robots.txt` points at it and the legal hub links to it
+
+### Removed
+- The "Powered by Stuxedo" rectangle badge in the footer: this site is served by GitHub Pages (see `CNAME`), not by Stuxedo hosting
+
 ## v1.4.9
 
 ### Added

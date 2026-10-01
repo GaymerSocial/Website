@@ -14,6 +14,7 @@ This is [a Stux.Group Service](https://services.stux.group) under the [GaymerSoc
 - `_redirects` is the Netlify catch-all (`/* / 301`) that sends every legacy Mastodon-style URL and anything else back to `/`; `404.html` is the fallback for hosts that only support redirects via a custom 404 page
 - No build step, no framework, no analytics/tracking scripts
 - The dev-mode banner is client-side (inline script in `index.html`/`404.html`), shown automatically on `localhost`/`127.0.0.1`; append `?nodev=1` to preview production behavior
+- The sitemap (`sitemap.xml`, `sitemap/index.html`, `robots.txt`) is generated: after adding or removing a page, edit the `PAGES` list in `scripts/build-sitemap.py` and run `python scripts/build-sitemap.py`, then commit the result
 
 ## Legal pages
 
