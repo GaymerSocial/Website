@@ -2,6 +2,12 @@
 
 All notable changes to this repo are documented here.
 
+## v1.5.2
+
+### Added
+
+- A copyright line in the footer (© START–CURRENT Stux.Group), worked out automatically: the start year alone in the first year, then START–CURRENT
+
 ## v1.5.1
 
 ### Fixed
