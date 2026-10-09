@@ -38,4 +38,4 @@ Copyright &copy; Stux.Group.
 ---
 
 *Built & Maintained by <img src="https://github.com/GaymerSocial.png" height="14" alt="Gaymer.Social" valign="middle"> [Gaymer.Social](https://github.com/GaymerSocial), Hosted by <img src="https://github.com/Stuxedo.png" height="14" alt="Stuxedo" valign="middle"> [Stuxedo](https://stuxedo.com).    
-Gaymer.Social is a part of the <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Group" valign="middle"> Stux.Group brand of businesses.*
+Gaymer.Social is a part of the <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.group/icon-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.group/icon-dark.png"><img src="https://global.media.stux.group/icon-dark.png" height="14" alt="Stux.Group" valign="middle"></picture> Stux.Group brand of businesses.*

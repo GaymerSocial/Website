@@ -2,6 +2,12 @@
 
 All notable changes to this repo are documented here.
 
+## v1.5.3
+
+### Changed
+
+- The logos and icons in the Markdown docs (README and the like) follow GitHub's light or dark theme, using each brand's `logo-light`/`logo-dark` and `icon-light`/`icon-dark` files
+
 ## v1.5.2
 
 ### Added
